@@ -10,12 +10,13 @@ body {
 }
 
 /* dark mode looking scrollbar */
+/* WebKit-based browsers (Chrome, Edge, Safari) */
 ::-webkit-scrollbar {
-	width: 8px;
+	width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-	background: #555;
+	background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -25,6 +26,10 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #242424;
+}
+*{
+	scrollbar-width: thin;
+
 }
 
 /* SHAKE ANIMATION ON HORIZONTAL DIRECTION */
